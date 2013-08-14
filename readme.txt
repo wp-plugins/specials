@@ -19,9 +19,11 @@ Simply add a title, short description (if needed) and an image. Then use our cus
 **Some helpful plugins for more functionality**
 
 Create New Images sizes for your Specials:
+
 http://wordpress.org/plugins/simple-image-sizes/
 
 Reorder your specials faster:
+
 http://wordpress.org/plugins/cms-tree-page-view/
 
 
