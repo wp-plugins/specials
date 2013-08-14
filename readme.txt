@@ -1,6 +1,6 @@
 === Specials ===
 Contributors: halgatewood
-Donate link: http://halgatewood.com/specials/
+Donate link: http://halgatewood.com/donate
 Tags: specials, special, sales, features, showcase, tools, small business, 
 Requires at least: 3.5
 Tested up to: 3.6
