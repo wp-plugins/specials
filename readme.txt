@@ -8,7 +8,7 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Show your company specials with beautiful text and images.
+A handy & easy way to manage and display your company specials.
 
 == Description ==
 
@@ -16,8 +16,7 @@ Your small business runs specials all the time and our plugin creates an easy wa
 
 Simply add a title, short description (if needed) and an image. Then use our custom controls to position the text on your image.
 
-
-=== Some helpful plugins for more functionality===
+=Some helpful plugins for more functionality=
 
 Create New Images sizes for your Specials:
 http://wordpress.org/plugins/simple-image-sizes/
