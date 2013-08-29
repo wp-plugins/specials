@@ -16,6 +16,8 @@ Your small business runs specials all the time and our plugin creates an easy wa
 
 Simply add a title, short description (if needed) and an image. Then use our custom controls to position the text on your image.
 
+Contribute on Github: https://github.com/halgatewood/specials
+
 **Some helpful plugins for more functionality**
 
 Create New Images sizes for your Specials:<br />
