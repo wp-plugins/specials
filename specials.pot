@@ -1,0 +1,81 @@
+# Copyright (C) 2013 Specials
+# This file is distributed under the same license as the Specials package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Specials 1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/specials\n"
+"POT-Creation-Date: 2013-08-14 20:49:38+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#. #-#-#-#-#  plugin.pot (Specials 1.0)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: specials.php:67 specials.php:79
+msgid "Specials"
+msgstr ""
+
+#: specials.php:68
+msgid "Special"
+msgstr ""
+
+#: specials.php:69
+msgid "Add New"
+msgstr ""
+
+#: specials.php:70
+msgid "Add New Special"
+msgstr ""
+
+#: specials.php:71
+msgid "Edit Special"
+msgstr ""
+
+#: specials.php:72
+msgid "New Special"
+msgstr ""
+
+#: specials.php:73
+msgid "All Specials"
+msgstr ""
+
+#: specials.php:74
+msgid "View Special"
+msgstr ""
+
+#: specials.php:75
+msgid "Search Specials"
+msgstr ""
+
+#: specials.php:76
+msgid "No specials found"
+msgstr ""
+
+#: specials.php:77
+msgid "No specials found in Trash"
+msgstr ""
+
+#: specials.php:132
+msgid "Special Options"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://www.halgatewood.com/product-specials"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Easily create a product special listing page. Items include a block of text "
+"and an image."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Hal Gatewood"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.halgatewood.com"
+msgstr ""

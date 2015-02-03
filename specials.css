@@ -1,0 +1,111 @@
+
+.specials_wrapper {
+	margin-bottom: 25px;
+	margin-top: 25px;
+	padding-top: 15px;
+}
+
+.no_specials {
+	padding: 25px;
+	margin: 25px;
+	background: #c24d4d;
+	color: #fff;
+}
+
+.special {
+	background-size: cover;
+	min-height: 100px;
+	margin-bottom: 5px;
+	position: relative;
+	clear: both;
+}
+
+.special h2 { margin: 0; padding: 0; margin-bottom: 4px; }
+.special p { margin-bottom: 0; padding-bottom: 0; }
+
+.special.picture-title-text .specials_text,
+.special.picture-text .specials_text,
+.special.picture-title .specials_text { 
+	width: 60%; 
+	padding: 2%;
+	background: #fff;
+	background: rgba(255,255,255,0.8); 
+	position: absolute;
+	color: #4f4f4f; 
+	box-shadow: 0 0 4px rgba(0,0,0,.5);
+	border: solid 1px #fff;
+	text-shadow: 0 1px 1px #ccc;
+}
+
+.special.center-center { text-align: center; }
+.special.center-left { text-align: left; }
+.special.center-right { text-align: right; }
+
+
+.special.center-left:before,
+.special.center-center:before,
+.special.center-right:before {
+  content: '';
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+  margin-right: -0.25em;
+} 
+
+.special.top-center.picture-title-text .specials_text,
+.special.top-center.picture-text .specials_text,
+.special.top-center.picture-title .specials_text {  margin-left: 18%; }
+
+.special.top-right.picture-title-text .specials_text,
+.special.top-right.picture-text .specials_text,
+.special.top-right.picture-title .specials_text {  right: 10px; }
+
+.special.bottom-left.picture-title-text .specials_text,
+.special.bottom-left.picture-text .specials_text,
+.special.bottom-left.picture-title .specials_text { left: 10px; bottom: 10px; }
+
+.special.bottom-center.picture-title-text .specials_text,
+.special.bottom-center.picture-text .specials_text,
+.special.bottom-center.picture-title .specials_text  {  margin-left: 16%; bottom: 10px; }
+
+.special.bottom-right.picture-title-text .specials_text,
+.special.bottom-right.picture-text .specials_text,
+.special.bottom-right.picture-title .specials_text { right: 10px; bottom: 10px; }
+
+
+.special.center-left.picture-title-text .specials_text,
+.special.center-left.picture-text .specials_text,
+.special.center-left.picture-title .specials_text  { 
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left; 
+	position: relative; 
+ }
+ 
+.special.center-center.picture-title-text .specials_text,
+.special.center-center.picture-text .specials_text,
+.special.center-center.picture-title .specials_text { 
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center; 
+	position: relative; 
+ }
+ 
+.special.center-right.picture-title-text .specials_text,
+.special.center-right.picture-text .specials_text,
+.special.center-right.picture-title .specials_text { 
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right; 
+	position: relative; 
+ }
+
+
+.special.top-left,
+.special.bottom-left { text-align: left; }
+
+.special.top-center,
+.special.bottom-center { text-align: center; }
+
+.special.top-right,
+.special.bottom-right { text-align: right; }
