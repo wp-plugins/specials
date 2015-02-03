@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Specials
-Version: 1.0
+Version: 1.1
 Plugin URI: http://www.halgatewood.com/product-specials
 Description: Easily create a product special listing page. Items include a block of text and an image.
 Author: Hal Gatewood
@@ -45,7 +45,7 @@ $no_specials_message = "Currently we are not offering any specials. Please check
 add_action( 'plugins_loaded', 'specials_setup' );
 function specials_setup() 
 {
-	$post_type = apply_filters( "specials_post_type", SPECIALS_POST_TYPE_NAME);
+	$post_type = apply_filters( "specials_post_type", SPECIALS_POST_TYPE_NAME );
 
 	add_action( 'init', 'create_specials_type' );
 	add_action( 'admin_head', 'specials_css' );
@@ -53,9 +53,15 @@ function specials_setup()
 
 
 	add_action( 'save_post', 'specials_save_specials_meta', 1, 2 );
-
 }
 
+
+function hg_specials_scripts()
+{
+	wp_enqueue_style('specials', plugins_url( 'specials' ) . '/specials.css');
+}
+
+add_action( 'wp_enqueue_scripts', 'hg_specials_scripts' );
 
 
 // CUSTOM POST TYPE
@@ -113,13 +119,11 @@ function specials_css()
 	$icon 		= plugins_url( 'specials' ) . "/icons/menu-icon.png";
 	$icon_32 	= plugins_url( 'specials' ) . "/icons/icon-32.png";
 	
-	echo "
+	echo '
 		<style> 
-			#menu-posts-{$post_type} .wp-menu-image { background: url({$icon}) no-repeat 6px -26px !important; }
-			#menu-posts-{$post_type}.wp-has-current-submenu .wp-menu-image { background-position:6px 6px!important; }
-			.icon32-posts-{$post_type} { background: url({$icon_32}) no-repeat 0 0 !important; }
+			#adminmenu #menu-posts-specials div.wp-menu-image:before { content: "\\f323"; } 
 		</style>
-	";	
+	';	
 }
 
 
@@ -284,13 +288,6 @@ function specials_shortcode($atts)
 // BRAINS
 function show_specials($id = false, $orderby = "menu_order", $order = "ASC", $limit = -1)
 {
-	// INCLUDE STYLES
- 	if(specials_has_shortcode('specials')) 
- 	{  
-    	wp_enqueue_style('specials', plugins_url( 'specials' ) . '/specials.css');  
-	}
-	
-
 	$post_type = apply_filters( "specials_post_type", SPECIALS_POST_TYPE_NAME);
 
 	$specials = array();
@@ -370,6 +367,7 @@ function show_specials($id = false, $orderby = "menu_order", $order = "ASC", $li
 
 
 
+// deprecated:
 // check the current post for the existence of a short code. from pippin
 function specials_has_shortcode($shortcode = '') 
 {
@@ -388,7 +386,5 @@ function specials_has_shortcode($shortcode = '')
 	// return our final results
 	return $found;
 }
-
-
 
 ?>
